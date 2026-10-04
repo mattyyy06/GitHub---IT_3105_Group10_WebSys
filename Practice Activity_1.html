@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+
+    <link rel="stylesheet" href="Practice Activity_1.css">
+</head>
+<body>
+    <!-- HEADER -->
+<header id="home">
+    <h1>Student Profile Portal</h1>
+    <p>
+        Welcome to my personal student profile and interactive
+        academic data submission dashboard.
+    </p>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#profile">Profile</a>
+    <a href="#media">Media</a>
+    <a href="#grades">Grades</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside>
+      
+    <h2>Quick Profile</h2>
+    <div class="profile-left">
+
+        <p><strong>Name:</strong> Kim Juhoon</p>
+        <p><strong>Sr Code:</strong> 24-010308</p>
+        <p><strong>Course:</strong>Bachelor of Science in Information Technology</p>
+        <p><strong>Year Level:</strong> 3rd Year</p>
+
+    </div>
+
+    <div class="semester-right">
+
+        <p><strong>FIRST SEMESTER AY 2026-2027</strong></p>
+        <p>College of Informatics and Computing Sciences -Alangilan Campus</p>
+        <p><strong>BS Information Technology</strong> -THIRD YEAR</p>
+        <p>Business Analytics</p>
+        <p><strong class="enrolled">ENROLLED</strong></p>
+
+    </div>
+
+    <hr>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- ABOUT ME -->
+        <section id="profile">
+            <h2>About Me</h2>
+
+            <article>
+                <h3>Student Biography</h3>
+
+                <p>
+                    Hello! My name is
+                    <span class="highlight">Kim Juhoon</span>.
+                    I am a <b>Information Technology student</b> who enjoys
+                    learning about technology and software development.
+                </p>
+
+                <p>
+                    I am <strong>responsible and hardworking</strong>,
+                    and I <i>enjoy solving programming problems</i>.
+                    My goal is to become a skilled software developer.
+                </p>
+
+                <p>
+                    I believe that <em>continuous learning</em> and
+                    practical experience are important for success
+                    in the field of information technology.
+                </p>
+            </article>
+
+            <hr>
+
+            <article>
+                <h3>My Interests</h3>
+
+                <p>
+                    My interests include
+                    <span class="highlight">web development</span>,
+                    programming, database management, and learning
+                    new technologies.
+                </p>
+            </article>
+        </section>
+
+        <!-- MEDIA -->
+        <section id="media">
+            <h2>Media &amp; Multimedia</h2>
+
+            <figure>
+                <img src="..\ID NO_ 24-010308.jpg"
+                alt="Student ID Photo"
+                width="900"
+                height="600">
+
+                    <figcaption>
+                        Fig 1. Student ID Photo 
+                    </figcaption>
+                </figure>
+            </figure>
+        </section>
+
+        <!-- ACADEMIC RECORD -->
+        <section id="grades">
+            <h2>Academic Record</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Student</th>
+                        <th>Subject</th>
+                        <th>Units</th>
+                        <th>Grade</th>
+                        <th>Remarks</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td rowspan="5">Kim Juhoon</td>
+                        <td>Purposive Communication</td>
+                        <td>3</td>
+                        <td>1.50</td>
+                        <td>Very Good</td>
+                    </tr>
+
+                    <tr>
+                        <td>Environmental Sciences</td>
+                        <td>3</td>
+                        <td>1.75</td>
+                        <td>Good</td>
+                    </tr>
+
+                    <tr>
+                        <td>Team Sports (Basketball and Volleyball)</td>
+                        <td>3</td>
+                        <td>1.00</td>
+                        <td>Excellent</td>
+                    </tr>
+
+                    <tr>
+                        <td>Understanding the Self</td>
+                        <td>3</td>
+                        <td>1.50</td>
+                        <td>Very Good</td>
+                    </tr>
+
+                    <tr>
+                        <td>Information Management</td>
+                        <td>3</td>
+                        <td>1.25</td>
+                        <td>Superior</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <strong>Total Units</strong>
+                        </td>
+
+                        <td><strong>15</strong></td>
+
+                        <td colspan="2">
+                            <strong>Overall GWA: 1.40</strong>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- REGISTRATION FORM -->
+        <section id="contact">
+            <h2>Student Registration / Feedback Form</h2>
+
+            <form
+                action="https://example.com/submit-student-data"
+                method="POST"
+                enctype="multipart/form-data">
+
+                <label for="fullname">Full Name:</label>
+                <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    placeholder="Enter your full name"
+                    required>
+
+        <br> </br>
+                <label for="email">Email Address:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="kimjuhoon@email.com"
+                    required>
+
+        <br> </br>
+                <label for="telephone">Telephone Number:</label>
+                <input
+                    type="tel"
+                    id="telephone"
+                    name="telephone"
+                    placeholder="09xx-xxx-xxxx"
+                    pattern="[0-9]{11}"
+                    title="Please enter an 11-digit telephone number."
+                    required>
+
+        <br> </br>
+                <label for="course">Course Track:</label>
+
+                <select id="course" name="course" required>
+                    <option value="">-- Select a Course Track --</option>
+
+                    <optgroup label="Computer Science">
+                        <option value="software-development">
+                            Software Development
+                        </option>
+
+                        <option value="data-science">
+                            Data Science
+                        </option>
+
+                        <option value="artificial-intelligence">
+                            Artificial Intelligence
+                        </option>
+                    </optgroup>
+
+                    <optgroup label="Information Technology">
+                        <option value="networking">
+                            Networking
+                        </option>
+
+                        <option value="web-development">
+                            Web Development
+                        </option>
+
+                        <option value="cybersecurity">
+                            Cybersecurity
+                        </option>
+                    </optgroup>
+                </select>
+
+        <br> </br>
+                <label for="programming-language">
+                    Favorite Programming Language:
+                </label>
+
+                <input
+                    list="languages"
+                    id="programming-language"
+                    name="programming-language"
+                    placeholder="Choose or type a language">
+
+                <datalist id="languages">
+                    <option value="HTML">
+                    <option value="CSS">
+                    <option value="Java">
+                    <option value="Python">
+                    <option value="C++">
+                </datalist>
+
+        <br> </br>
+                <label>Electives:</label>
+
+                <div class="checkbox-group">
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="electives"
+                            value="mobile-development">
+                        Mobile Development
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="electives"
+                            value="game-development">
+                        Game Development
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="electives"
+                            value="graphic-design">
+                        Graphic Design
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="electives"
+                            value="cloud-computing">
+                        Cloud Computing
+                    </label>
+
+                </div>
+
+        <br> </br>
+                <label for="student-file">
+                    Upload Student Document:
+                </label>
+                <input
+                    type="file"
+                    id="student-file"
+                    name="student-file"
+                    accept=".pdf,.doc,.docx,.jpg,.png">
+
+        <br> </br>
+                <label for="feedback">
+                    Comments / Feedback:
+                </label>
+                <textarea
+                    id="feedback"
+                    name="feedback"
+                    rows="4"
+                    placeholder="Enter your comments or feedback here..."></textarea>
+
+        <br> </br>
+                <button type="reset">Reset Form</button>
+                <button type="submit">Submit Data</button>
+
+            </form>
+        </section>
+
+
+    </main>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 Student Profile Portal. All Rights Reserved.</p>
+    <p>Created for HTML &amp; CSS Practice Activity 1 &amp; 2.</p>
+</footer>
+
+</body>
